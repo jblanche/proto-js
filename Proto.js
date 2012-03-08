@@ -54,7 +54,7 @@ Function.prototype.extend = function(subProps) {
 };
 
 ////////// MIXIN IMPLEMENTATION //////////
-function include(destination, source) {
+function extend(destination, source) {
   for (var k in source) {
     if (source.hasOwnProperty(k)) {
       destination[k] = source[k];
